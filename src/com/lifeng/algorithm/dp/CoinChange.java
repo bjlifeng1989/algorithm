@@ -11,9 +11,11 @@ import java.util.Arrays;
 public class CoinChange {
 
     public static void main(String[] args) {
-
+        int[] coins = {1,2,5};
+        int amount = 11;
+        System.out.println(coinChange(coins,amount));
     }
-    public int coinChange(int[] coins,int amount){
+    public static int coinChange(int[] coins,int amount){
         //定义dp[i]为，目标金额为i时需要dp[i]个硬币
         int[] dp = new int[amount+1];
         Arrays.fill(dp,amount+1);
