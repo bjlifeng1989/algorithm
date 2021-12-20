@@ -18,7 +18,7 @@ public class MinFailingPathSum {
             Arrays.fill(memo[i],66666);
         }
         for (int j = 0; j <n ; j++) {
-            res = Math.min(res,dp())
+            res = Math.min(res,dp(martrix,n-1,j));
         }
         return res;
     }
